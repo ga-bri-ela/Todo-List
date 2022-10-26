@@ -43,6 +43,7 @@ const handleTask =  (input)  => {
     label.append(input);
     tasksContainer.appendChild(taskElement);
     incompleteTaskCount();
+    dragDropTextToggle();
 
 //checkbox eventlistener and definition of complete and incomplete tasks
     checkbox.addEventListener('change', (e) => {
@@ -72,6 +73,7 @@ const handleTask =  (input)  => {
     deleteButton.addEventListener('click', () => {
         submittedTask.remove();
         incompleteTaskCount();
+        dragDropTextToggle();
     });
 
 // list drag and drop set up
@@ -193,6 +195,7 @@ const clearCompletedTasks = () => {
 
     inactiveTasks.forEach(task => {
         task.remove();
+        dragDropTextToggle();
     });
 };
 
@@ -204,5 +207,19 @@ const icon = document.getElementById('icon');
 
 icon.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-})
+    if(document.body.classList.contains('dark-mode')){
+        icon.src = '/images/icon-sun.svg';
+    } else {
+        icon.src = '/images/icon-moon.svg';
+    };
+});
 
+//check for the text
+const dragDropTextToggle = () => {
+    const allTasks = [... tasksContainer.querySelectorAll('.submitted-task')];
+    if(allTasks.length > 1) {
+        dragDropText.style.display = 'flex';
+    } else {
+        dragDropText.style.display = 'none';
+    }
+};
