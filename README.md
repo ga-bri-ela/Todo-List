@@ -74,7 +74,7 @@ icon.addEventListener('click', () => {
         <template id="task-template">
             <div class="submitted-task incomplete-task draggable" draggable="true">
                <button class="icon-cross">
-                    <img src="/images/icon-cross.svg" 
+                    <img src="images/icon-cross.svg" 
                          aria-label="Delete task" />
                </button>
                <input type="checkbox">
