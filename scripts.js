@@ -7,9 +7,9 @@
 let inputField = document.getElementById('new-task');
 let tasksContainer = document.getElementById('list-of-tasks');
 let taskTemplate = document.getElementById('task-template');
-let allTasksFilter = document.getElementById('filter-all');
-let activeTasksFilter = document.getElementById('filter-active');
-let completedTasksFilter = document.getElementById('filter-completed');
+let allTasksFilter = document.querySelector('.filter-all');
+let activeTasksFilter = document.querySelector('.filter-active');
+let completedTasksFilter = document.querySelector('.filter-completed');
 let clearCompletedButton = document.getElementById('clear-completed');
 let dragDropText = document.getElementById('dragdrop');
 
@@ -77,20 +77,22 @@ const handleTask =  (input)  => {
     });
 
 // list drag and drop set up
+    
     const draggables = document.querySelectorAll('.draggable');
 
+    //drag and drop event listeners
     draggables.forEach(draggable => (
-    draggable.addEventListener('dragstart', () => {
-        draggable.classList.add('dragging');
-    })
+        draggable.addEventListener('dragstart', () => {
+            draggable.classList.add('dragging');
+        })
     ));
 
     draggables.forEach(draggable => (
         draggable.addEventListener('dragend', () => {
             draggable.classList.remove('dragging');
         })
-        ));
-    
+    ));
+   
     tasksContainer.addEventListener('dragover', e => {
         //removes the "forbidden" cursor icon
         e.preventDefault();
@@ -128,6 +130,8 @@ const handleTask =  (input)  => {
         dragDropText.style.display = 'flex';
     };
 };
+
+
 
 
 //counts and displays the amount of todo tasks
@@ -223,3 +227,4 @@ const dragDropTextToggle = () => {
         dragDropText.style.display = 'none';
     }
 };
+
