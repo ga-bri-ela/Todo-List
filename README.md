@@ -38,6 +38,7 @@ To accomplish this challenge, I have watched a lot of tutorials (which will be l
 Here are some of the features and tools I have learned with this project that I would like to highlight:
 
 -	CSS variables: I had seen them before in tutorials but had never used them. And what a game changer it is. This tool made implementing the dark mode so easy! All it took was setting up the variables that needed to be changed and writing a tiny bit of JS. And I must admit that building my first project with a dark themed option made me feel really awesome! 
+
 This is a snippet of the CSS code:
 ```
 .dark-mode {
@@ -63,30 +64,39 @@ icon.addEventListener('click', () => {
 });
 ```
 
--	Sortable Drag and Drop option: This is a really cool feature and following the tutorial by [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) really broke it down into a simple implementation. Nonetheless, I still have a little to go here, more about it in the “Continue Development” section.
+-	Sortable Drag and Drop option: This is a really cool feature and following the tutorial by [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) really broke it down into a simple implementation. Nonetheless, I still have a little to go here, more about it in the “Continued Development” section.
 
 -	Custom checkbox: Having to customize the checkbox made me understand a lot about this kind of input, its relationship with its label and overall design possibilities. I did hit a really big wall while working on it, but thankfully I got saved by an article at the [Trendy Coder]( https://thetrendycoder.com/) literally called “Custom checkbox not working”. 😅
 
 -	Html <template> tags: I have leaned to use <template> by following another [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) tutorial. The code snippet below shows how I have used it to create the “blueprint” for the to-dos elements.
 
->        <template id="task-template">
->            <div class="submitted-task incomplete-task draggable" draggable="true">
->               <button class="icon-cross">
->                    <img src="/images/icon-cross.svg" 
->                         aria-label="Delete task" />
->               </button>
->               <input type="checkbox">
->               <label>
->                   <span class="custom-checkbox">
->                       <span class="check">
->                       </span>
->                   </span>
->               </label>
->           </div>
->       </template>
+ ```
+        <template id="task-template">
+            <div class="submitted-task incomplete-task draggable" draggable="true">
+               <button class="icon-cross">
+                    <img src="/images/icon-cross.svg" 
+                         aria-label="Delete task" />
+               </button>
+               <input type="checkbox">
+               <label>
+                   <span class="custom-checkbox">
+                       <span class="check">
+                       </span>
+                   </span>
+               </label>
+           </div>
+       </template>
+```
+ 
+## Continued Development 🛠
+ 
+As previously mentioned, the sortable drag and drop feature still needs some work. While figuring out how to work it for the desktop version was quite straightforward with “dragstart” and “dragend”, once it came to the mobile option, I simply could not get the “touchmove” and “touchend” to function. I have tried following [this tutorial]( https://medium.com/@deepakkadarivel/drag-and-drop-dnd-for-mobile-browsers-fc9bcd1ad3c5) and a couple of other similar ones. But all the ones I could find required the position of the element to be set as “absolute”. And I could not make that work with how I was creating and appending the new to-dos. 
+ 
+I hope that I will find a solution as my knowledge grows or I once I get some feedback on my code. Once I do, I will be updating my files to include the drag and drop feature into the mobile as well. 
 
  
-## Resources and Links 
+## Resources and Links 📌
+ 
 -	Video Tutorial [How to Code A Better To-Do List – Tutorial Part 1 HTML/CSS (by Kevin Powell)]( https://www.youtube.com/watch?v=IhmSidOJSeE&t=0s) 
 -	Video Tutorial [How to Code A Better To-Do List – Tutorial Part 2 JS (by Web Dev Simplified)]( https://www.youtube.com/watch?v=W7FaYfuwu70&t=2062s) 
 -	Article [Custom Checkbox Not Working by The Trendy Coder](https://thetrendycoder.com/custom-checkbox-not-working/)
