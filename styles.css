@@ -298,8 +298,8 @@ button:hover {
         justify-content: center;
         width: 100%;
         background-color: var(--secondary-color);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
         margin-top: 1rem;
         -webkit-box-shadow: var(--shadowColor);
         box-shadow: var(--shadowColor);     
@@ -336,8 +336,8 @@ button:hover {
         justify-content: center;
         width: 100%;
         background-color: var(--secondary-color);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
         margin-top: 1rem;
         -webkit-box-shadow: var(--shadowColor);
         box-shadow: var(--shadowColor);     
