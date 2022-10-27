@@ -11,7 +11,7 @@ According to Frontend Mentor, to complete the [Todo App]( https://www.frontendme
 - View the optimal layout for the app depending on their device’s screen size
 - See the hover states for all interactive elements on the page
 - Add new todos to the list
--  Delete todos from the list
+- Delete todos from the list
 - Filter by all/active/complete todos
 - Clear all completed todos 
 - Toggle light and dark mode
@@ -36,22 +36,16 @@ This project was built using JavaScript ES6, CSS and HTML.
 This was my first attempt at an intermediate level challenge at Frontend mentor, and it made me so happy and motivated to see how much I have learned since I have started practicing at the platform. 
 To accomplish this challenge, I have watched a lot of tutorials (which will be linked below), and learned a lot of new problem-solving possibilities with them. Taking on a task as popular as a to-do list has the advantages of having plenty of resources available to help. But it was definitely not a mindless task, as I had to customize and “Frankenstein” all that input into something that made sense to the design I was given and the features I wanted to implement. 
 Here are some of the features and tools I have learned with this project that I would like to highlight:
+
 -	CSS variables: I had seen them before in tutorials but had never used them. And what a game changer it is. This tool made implementing the dark mode so easy! All it took was setting up the variables that needed to be changed and writing a tiny bit of JS. And I must admit that building my first project with a dark themed option made me feel really awesome! 
 
 > .dark-mode{
-> 
 >   --primary-color: hsl(237, 14%, 26%);
->   
 >   --secondary-color: hsl(233, 14%, 35%);
->   
 >   --tertiary-color: hsl(236, 33%, 92%);
->   
 >   --quaternary-color: hsl(236, 9%, 61%);
->   
 >   --shadowColor: 0px 15px 29px 0px rgba(29, 29, 29, 0.5);
->   
 >   --background: url("/images/bg-desktop-dark.jpg");
->   
 >  }
 
 > const icon = document.getElementById('icon');
@@ -95,8 +89,6 @@ Here are some of the features and tools I have learned with this project that I 
 >           </div>
 >       </template>
 
--	Keeping the future Readme in mind: I have started this read me and notes about it while learning and building this project, not leaving as an afterthought as I have done before. I kept notes on what I thought were important take-aways and saved the links to be able to properly acknowledge those who have helped me finish this project.  
- 
  
 ## Resources and Links 
 -	Video Tutorial [How to Code A Better To-Do List – Tutorial Part 1 HTML/CSS (by Kevin Powell)]( https://www.youtube.com/watch?v=IhmSidOJSeE&t=0s) 
