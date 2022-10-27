@@ -38,9 +38,8 @@ To accomplish this challenge, I have watched a lot of tutorials (which will be l
 Here are some of the features and tools I have learned with this project that I would like to highlight:
 
 -	CSS variables: I had seen them before in tutorials but had never used them. And what a game changer it is. This tool made implementing the dark mode so easy! All it took was setting up the variables that needed to be changed and writing a tiny bit of JS. And I must admit that building my first project with a dark themed option made me feel really awesome! 
-
+This is a snippet of the CSS code:
 ```
-//CSS code
 .dark-mode {
         --primary-color: hsl(237, 14%, 26%);
         --secondary-color: hsl(233, 14%, 35%);
@@ -51,8 +50,8 @@ Here are some of the features and tools I have learned with this project that I 
 }
 ```
 
+And the snippet for the JS code:
 ```
-//JS code
 const icon = document.getElementById('icon');
 icon.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
