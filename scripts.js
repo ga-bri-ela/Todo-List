@@ -1,8 +1,3 @@
-//https://nikitahl.com/gradient-border-css#:~:text=To%20show%20gradients%20for%20a,to%20actually%20show%20border%20gradient.
-
-//https://thetrendycoder.com/custom-checkbox-not-working/
-
-
 //global selectors
 let inputField = document.getElementById('new-task');
 let tasksContainer = document.getElementById('list-of-tasks');
