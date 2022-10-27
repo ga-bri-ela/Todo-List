@@ -39,33 +39,30 @@ Here are some of the features and tools I have learned with this project that I 
 
 -	CSS variables: I had seen them before in tutorials but had never used them. And what a game changer it is. This tool made implementing the dark mode so easy! All it took was setting up the variables that needed to be changed and writing a tiny bit of JS. And I must admit that building my first project with a dark themed option made me feel really awesome! 
 
->.dark-mode {
->   --primary-color: hsl(237, 14%, 26%);
->   --secondary-color: hsl(233, 14%, 35%);
->   --tertiary-color: hsl(236, 33%, 92%);
->   --quaternary-color: hsl(236, 9%, 61%);
->   --shadowColor: 0px 15px 29px 0px rgba(29, 29, 29, 0.5);
->   --background: url("/images/bg-desktop-dark.jpg");
->}
+```
+//CSS code
+.dark-mode {
+        --primary-color: hsl(237, 14%, 26%);
+        --secondary-color: hsl(233, 14%, 35%);
+        --tertiary-color: hsl(236, 33%, 92%);
+        --quaternary-color: hsl(236, 9%, 61%);
+        --shadowColor: 0px 15px 29px 0px rgba(29, 29, 29, 0.5);
+        --background: url("/images/bg-desktop-dark.jpg");
+}
+```
 
-> const icon = document.getElementById('icon');
-> 
->
->icon.addEventListener('click', () => {
->
->    document.body.classList.toggle('dark-mode');
->    
->    if(document.body.classList.contains('dark-mode')){
->    
->        icon.src = '/images/icon-sun.svg';
->        
->    } else {
->    
->        icon.src = '/images/icon-moon.svg';
->        
->    };
->    
->});
+```
+//JS code
+const icon = document.getElementById('icon');
+icon.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+                if(document.body.classList.contains('dark-mode')){
+                        icon.src = '/images/icon-sun.svg';
+                } else {
+                        icon.src = '/images/icon-moon.svg';
+                };    
+});
+```
 
 -	Sortable Drag and Drop option: This is a really cool feature and following the tutorial by [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) really broke it down into a simple implementation. Nonetheless, I still have a little to go here, more about it in the “Continue Development” section.
 
