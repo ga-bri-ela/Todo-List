@@ -204,9 +204,9 @@ const icon = document.getElementById('icon');
 icon.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     if(document.body.classList.contains('dark-mode')){
-        icon.src = 'images/icon-sun.svg';
+        icon.src = 'images\icon-sun.svg';
     } else {
-        icon.src = 'images/icon-moon.svg';
+        icon.src = 'images\icon-moon.svg';
     };
 });
 
