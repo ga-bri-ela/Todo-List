@@ -71,8 +71,7 @@ const handleTask =  (input)  => {
         dragDropTextToggle();
     });
 
-// list drag and drop set up
-    
+// list drag and drop set up    
     const draggables = document.querySelectorAll('.draggable');
 
     //drag and drop event listeners
@@ -125,8 +124,6 @@ const handleTask =  (input)  => {
         dragDropText.style.display = 'flex';
     };
 };
-
-
 
 
 //counts and displays the amount of todo tasks
@@ -207,9 +204,9 @@ const icon = document.getElementById('icon');
 icon.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     if(document.body.classList.contains('dark-mode')){
-        icon.src = 'images/icon-sun.svg';
+        icon.src = 'images\icon-sun.svg';
     } else {
-        icon.src = 'images/icon-moon.svg';
+        icon.src = 'images\icon-moon.svg';
     };
 });
 
