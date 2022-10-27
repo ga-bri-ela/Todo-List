@@ -12,7 +12,7 @@ body {
     --tertiary-color: hsl(235, 19%, 35%);
     --quaternary-color: hsl(236, 9%, 61%);
     --shadowColor: 0px 15px 29px 0px rgba(210,211,219, 0.5);
-    --background: url("/images/bg-desktop-light.jpg");
+    --background: url("images/bg-desktop-dark.jpg");
 
 }
 
@@ -22,7 +22,7 @@ body {
     --tertiary-color: hsl(236, 33%, 92%);
     --quaternary-color: hsl(236, 9%, 61%);
     --shadowColor: 0px 15px 29px 0px rgba(29, 29, 29, 0.5);
-    --background: url("/images/bg-desktop-dark.jpg");
+    --background: url("images/bg-desktop-dark.jpg");
 }
 
 header{
