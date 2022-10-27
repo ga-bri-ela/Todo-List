@@ -65,19 +65,19 @@ Here are some of the features and tools I have learned with this project that I 
 
 >        <template id="task-template">
 >            <div class="submitted-task incomplete-task draggable" draggable="true">
->                <button class="icon-cross">
-<img src="/images/icon-cross.svg" 
-aria-label="Delete task" />
- </button>
-                <input type="checkbox">
-                <label>
-                    <span class="custom-checkbox">
-                        <span class="check">
-                        </span>
-                    </span>
-                </label>
-            </div>
-        </template>
+>               <button class="icon-cross">
+>                    <img src="/images/icon-cross.svg" 
+>                         aria-label="Delete task" />
+>               </button>
+>               <input type="checkbox">
+>               <label>
+>                   <span class="custom-checkbox">
+>                       <span class="check">
+>                       </span>
+>                   </span>
+>               </label>
+>           </div>
+>       </template>
 
 -	Keeping the future Readme in mind: I have started this read me and notes about it while learning and building this project, not leaving as an afterthought as I have done before. I kept notes on what I thought were important take-aways and saved the links to be able to properly acknowledge those who have helped me finish this project.  
 ## Resources and Links 
