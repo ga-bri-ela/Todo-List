@@ -47,7 +47,7 @@ This is a snippet of the CSS code:
         --tertiary-color: hsl(236, 33%, 92%);
         --quaternary-color: hsl(236, 9%, 61%);
         --shadowColor: 0px 15px 29px 0px rgba(29, 29, 29, 0.5);
-        --background: url("/images/bg-desktop-dark.jpg");
+        --background: url("images/bg-desktop-dark.jpg");
 }
 ```
 
@@ -57,9 +57,9 @@ const icon = document.getElementById('icon');
 icon.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
                 if(document.body.classList.contains('dark-mode')){
-                        icon.src = '/images/icon-sun.svg';
+                        icon.src = 'images/icon-sun.svg';
                 } else {
-                        icon.src = '/images/icon-moon.svg';
+                        icon.src = 'images/icon-moon.svg';
                 };    
 });
 ```
