@@ -159,7 +159,7 @@ label {
  border: none;
 }
 
- .check {
+.check {
     padding-top: 28%;
     padding-left: 5%;
     visibility: hidden;
@@ -215,6 +215,10 @@ button:hover {
     display: none;
     justify-content: center;
     padding-top: 30px;
+}
+
+#icon {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 375px) {
