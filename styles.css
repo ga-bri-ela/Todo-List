@@ -217,7 +217,7 @@ button:hover {
     padding-top: 30px;
 }
 
-#icon:hover {
+.icon-theme:hover {
     cursor: pointer;
 }
 
